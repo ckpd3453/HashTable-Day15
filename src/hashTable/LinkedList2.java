@@ -1,12 +1,18 @@
 package hashTable;
 
-public class LinkedList<K> {
+public class LinkedList2<K> {
 	
-	private Node<K> head;
-	private Node<K> tail;
+	/*
+	 * 1. Creating a node
+	 */
+	private Node2<K> head;
+	private Node2<K> tail;
 
-	public Node<K> search(K key) {
-		Node<K> temp = head;
+	/*
+	 * 2. Created a method to find the bucket index
+	 */
+	public Node2<K> search(K key) {
+		Node2<K> temp = head;
 		while (temp != null) {
 			if (temp.getKey().equals(key)) {
 				return temp;
@@ -16,7 +22,10 @@ public class LinkedList<K> {
 		return null;
 	}
 
-	public void append(Node<K> myNode) {
+	/*
+	 * 3. Created a method to append the node at calculated index
+	 */
+	public void append(Node2<K> myNode) {
 
 		if (this.head == null) {
 			this.head = myNode;
@@ -33,7 +42,6 @@ public class LinkedList<K> {
 	public String toString() {
 		return "\n MyLinkedListNodes{" + head + "}";
 	}
-	
 
 	public void printMyNodes() {
 		System.out.println(" My Nodes :" + head);

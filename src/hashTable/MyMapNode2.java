@@ -1,12 +1,12 @@
 package hashTable;
 
-public class MyMapNode<K,V> implements Node<K> {
+public class MyMapNode2<K,V> implements Node2<K> {
 	K key;
 	V value;
-    Node<K> next;
+    Node2<K> next;
    
-    //constructor
-	public MyMapNode(K key, V value) {
+    //constructor of self class
+	public MyMapNode2(K key, V value) {
 		super();
 		this.key = key;
 		this.value = value;
@@ -30,12 +30,12 @@ public class MyMapNode<K,V> implements Node<K> {
 	}
     
 	@Override
-	public Node<K> getNext() {
+	public Node2<K> getNext() {
 		return next;
 	}
 
 	@Override
-	public void setNext(Node<K> next) {
+	public void setNext(Node2<K> next) {
 		
 		this.next = next;
     
