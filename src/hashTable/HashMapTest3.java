@@ -1,6 +1,6 @@
 package hashTable;
 
-public class HashMapTest2 {
+public class HashMapTest3 {
 
 	/**
 	 * @param args
@@ -23,8 +23,8 @@ public class HashMapTest2 {
 		/*
 		 * 2. creating a hash table
 		 */
-		HashMap2<String, Integer> hashMap = new HashMap2<>();
-
+		HashMap3<String, Integer> hashMap = new HashMap3<>();
+	
 		/*
 		 * 3. fetching the elements by key and their values and adding them into the hashmap
 		 */
@@ -39,10 +39,9 @@ public class HashMapTest2 {
 			}
 			hashMap.add(word, value);
 		}
-
-		/*
-		 * 4. Printing the table
-		 */
+		
+		HashMap3 hashMap3 = new HashMap3();
+		hashMap3.remove("avoidable");
 		System.out.println(hashMap);
 
 	}
